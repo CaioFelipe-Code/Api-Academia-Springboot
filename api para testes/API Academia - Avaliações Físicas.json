@@ -1,0 +1,71 @@
+{
+  "info": {
+    "name": "API Academia - Avaliações Físicas",
+    "_postman_id": "caio-academia-avaliacoes-001",
+    "description": "Collection para testar os endpoints da API de Avaliações Físicas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Todas Avaliações",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/avaliacoes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["avaliacoes"]
+        }
+      }
+    },
+    {
+      "name": "POST Criar Avaliação Física",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/avaliacoes?alunoId=1&peso=80&altura=1.75",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["avaliacoes"],
+          "query": [
+            { "key": "alunoId", "value": "1" },
+            { "key": "peso", "value": "80" },
+            { "key": "altura", "value": "1.75" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET Avaliação por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/avaliacoes/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["avaliacoes", "1"]
+        }
+      }
+    },
+    {
+      "name": "DELETE Avaliação",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/avaliacoes/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["avaliacoes", "1"]
+        }
+      }
+    }
+  ]
+}

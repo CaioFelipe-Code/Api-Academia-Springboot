@@ -1,0 +1,131 @@
+{
+    "info": {
+        "name": "API Academia - Alunos",
+        "_postman_id": "caio-academia-12345",
+        "description": "Collection para testar os endpoints da API de alunos",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET Todos Alunos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/alunos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "alunos"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST Criar Aluno",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nome\": \"Jo\\u00e3o Silva\",\n    \"email\": \"joao@email.com\",\n    \"idade\": 25\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8080/alunos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "alunos"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Aluno por ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/alunos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "alunos",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "PUT Atualizar Aluno",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nome\": \"Jo\\u00e3o Silva Atualizado\",\n    \"email\": \"joao_novo@email.com\",\n    \"idade\": 26\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8080/alunos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "alunos",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "DELETE Aluno",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/alunos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "alunos",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}

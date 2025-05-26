@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "API Academia - Matrículas",
+    "_postman_id": "caio-academia-matriculas-123",
+    "description": "Collection para testar os endpoints da entidade Matricula",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Todas Matrículas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/matriculas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["matriculas"]
+        }
+      }
+    },
+    {
+      "name": "POST Criar Matrícula",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/matriculas?alunoId=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["matriculas"],
+          "query": [
+            {
+              "key": "alunoId",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET Matrícula por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/matriculas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["matriculas", "1"]
+        }
+      }
+    },
+    {
+      "name": "DELETE Matrícula",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/matriculas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["matriculas", "1"]
+        }
+      }
+    }
+  ]
+}
